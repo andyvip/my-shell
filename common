@@ -1,0 +1,24 @@
+
+# ------- alias set --------------
+alias ll="ls -alF"
+
+
+
+# --------epxort Library tool--------
+# user python package
+export PATH=$PATH:/Users/andy/Library/Python/2.7/bin
+
+
+# ------- export  homebrew tool-----
+export HOMEBREW_CACHE=/Users/andy/workspace/tool/homebrew/cache
+export PATH=$PATH:/Users/andy/workspace/tool/homebrew/bin
+
+
+# ------ export general tool--------
+# repo
+export PATH=$PATH:/Users/andy/workspace/tool/general/repo/bin
+
+# android-sdk
+export PATH=$PATH:/Users/andy/workspace/tool/general/android/sdk/tools
+export PATH=$PATH:/Users/andy/workspace/tool/general/android/sdk/tools/bin
+export PATH=$PATH:/Users/andy/workspace/tool/general/android/sdk/platform-tools
