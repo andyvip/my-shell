@@ -1,1 +1,3 @@
-. /Users/andy/workspace/tool/ashell
+ZSH_THEME="my"
+
+. ~/.myshell/common
