@@ -7,7 +7,7 @@ export BREW_HOME=~/workspace/tool/homebrew
 export HOMEBREW_CACHE=$BREW_HOME/cache
 export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
 
-export GOPATH=$BREW_HOME/Cellar/go/1.9.2
+export GOPATH=$HOME/workspace/code/go
 
 export PATH=$PATH:~/Library/Python/2.7/bin
 export PATH=$PATH:$BREW_HOME/bin
