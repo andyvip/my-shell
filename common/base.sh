@@ -15,6 +15,7 @@ export PATH=$PATH:$TOOL_HOME/android/sdk/tools
 export PATH=$PATH:$TOOL_HOME/android/sdk/tools/bin
 export PATH=$PATH:$TOOL_HOME/android/sdk/platform-tools
 
+export PATH=$PATH:$TOOL_HOME/node/v8.9.0/bin
 export PATH=$PATH:~/Library/Python/2.7/bin
 
 # for item in `find $TOOL_HOME -name bin -type d -maxdepth 2`; do
