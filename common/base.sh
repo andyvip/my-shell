@@ -18,6 +18,8 @@ export PATH=$TOOL_HOME/android/sdk/platform-tools:$PATH
 export PATH=$TOOL_HOME/node/v8.9.0/bin:$PATH
 export PATH=~/Library/Python/2.7/bin:$PATH
 
-for item in `find $TOOL_HOME -name bin -type d -maxdepth 3`; do
+for item in `find $TOOL_HOME -maxdepth 3 -type d -name bin`; do
     export PATH=$item:$PATH
 done
+
+alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
