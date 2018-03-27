@@ -13,6 +13,8 @@ if [[ $SHELL == "/bin/zsh" ]]; then
 	MYSHELL="$(cd "$(dirname "$0")" && pwd)"
 	ZSH=$MYSHELL/thirdparty/oh-my-zsh
 	ZSH_CUSTOM=$MYSHELL/custom/oh-my-zsh/custom
+	DISABLE_AUTO_UPDATE=false
+	DISABLE_UPDATE_PROMPT=false
 	plugins=(git)
 	source $ZSH/oh-my-zsh.sh
 fi
