@@ -1,14 +1,3 @@
-TOOLS=~/workspace/tool/general
-HOMEBREW=~/workspace/tool/homebrew
-ANDROID_SDK=~/workspace/tool/general/android/sdk
-
-if [[ $SHELL == "/bin/bash" ]]; then
-	export PS1="\$ \w > "
-	export CLICOLOR=1
-	source $HOMEBREW/etc/bash_completion
-	source $HOMEBREW/completions/bash/brew
-fi
-
 if [[ $SHELL == "/bin/zsh" ]]; then
 	MYSHELL="$(cd "$(dirname "$0")" && pwd)"
 	ZSH=$MYSHELL/thirdparty/oh-my-zsh
@@ -19,18 +8,19 @@ if [[ $SHELL == "/bin/zsh" ]]; then
 	source $ZSH/oh-my-zsh.sh
 fi
 
-export PATH=$HOMEBREW/bin:$PATH
-export PATH=$ANDROID_SDK/tools:$ANDROID_SDK/tools/bin:$ANDROID_SDK/platform-tools:$PATH
-export PATH=$HOME/Library/Python/2.7/bin:$PATH
-for item in `find $TOOLS -maxdepth 3 -type d -name bin`; do
-    export PATH=$item:$PATH
-done
-
-export HOMEBREW_CACHE=$HOMEBREW/cache
-export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.ustc.edu.cn/homebrew-bottles
-
-export GOROOT=$TOOLS/go/1.9.2
-export GOPATH=$HOME/workspace/code/go
+if [[ $SHELL == "/bin/bash" ]]; then
+  export PS1="\$ \w > "
+  export CLICOLOR=1
+fi
 
 alias ll="ls -alF"
 alias subl="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+export HOMEBREW_NO_AUTO_UPDATE=true
+
+export PATH=$HOME/workspace/tool/android-sdk/platform-tools:$PATH
+
+export ANDROID_NDK=$HOME/workspace/tool/android-ndk-r14b
